@@ -62,6 +62,12 @@ public class UserController {
         Map<String, Object> result = new HashMap<String, Object>();
         Boolean isSuccess = this.userServie.saveUser(user);
         if (isSuccess) {
+
+
+
+
+
+
             result.put("status", "200");
         } else {
             result.put("status", "500");

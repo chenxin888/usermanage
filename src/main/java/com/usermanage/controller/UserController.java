@@ -42,6 +42,11 @@ public class UserController {
     @ResponseBody
     public EasyUIResult queryUserList(@RequestParam(value = "page", defaultValue = "1") Integer page,
             @RequestParam(value = "rows", defaultValue = "5") Integer rows) {
+
+
+
+
+
         return this.userServie.queryUserList(page, rows);
     }
 

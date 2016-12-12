@@ -114,6 +114,7 @@ public class User implements java.io.Serializable{
 
     @Override
     public String toString() {
+
         return "User [id=" + id + ", userName=" + userName + ", password=" + password + ", name=" + name
                 + ", age=" + age + ", sex=" + sex + ", birthday=" + birthday + ", created=" + created
                 + ", updated=" + updated + "]";

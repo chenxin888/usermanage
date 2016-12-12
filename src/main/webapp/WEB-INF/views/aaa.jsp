@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+         pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <%--<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />--%>
@@ -20,7 +20,7 @@
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
+<form id="form1" runat="server">
     <div class="menu" id="menu">
         <h2>
             商家管理</h2>
@@ -28,25 +28,25 @@
             <li><a href="Add.aspx" target="list">添加商家</a></li>
             <li><a href="List.aspx" target="list">商家信息管理</a></li>
         </ul>
-         <h2>
+        <h2>
             商家管理</h2>
         <ul>
             <li><a href="Add.aspx" target="list">添加商家</a></li>
             <li><a href="List.aspx" target="list">商家信息管理</a></li>
         </ul>
-         <h2>
+        <h2>
             商家管理</h2>
         <ul>
             <li><a href="Add.aspx" target="list">添加商家</a></li>
             <li><a href="List.aspx" target="list">商家信息管理</a></li>
         </ul>
-         <h2>
+        <h2>
             商家管理</h2>
         <ul>
             <li><a href="Add.aspx" target="list">添加商家</a></li>
             <li><a href="List.aspx" target="list">商家信息管理</a></li>
         </ul>
-         <h2>
+        <h2>
             商家管理</h2>
         <ul>
             <li><a href="Add.aspx" target="list">添加商家</a></li>
@@ -74,6 +74,6 @@
             }
         }
     </script>
-    </form>
+</form>
 </body>
 </html>

@@ -60,11 +60,11 @@
         })
 
         var oa = document.getElementById("menu").getElementsByTagName("a");
-        for (i = 0; i < oa.length; i++) {
+        for (i = 0; i &lt; oa.length; i++) {
             oa[i].onclick = function () {
                 var tit = self.parent.frames["title"].document.getElementsByTagName('div')[0].getElementsByTagName('p')[0];
                 tit.innerHTML = this.innerHTML;
-                for (i = 0; i < oa.length; i++) {
+                for (i = 0; i &lt; oa.length; i++) {
                     oa[i].className = '';
                 }
                 this.className = "cur";

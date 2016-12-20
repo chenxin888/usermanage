@@ -19,6 +19,9 @@ public class User implements java.io.Serializable{
     // 姓名
     private String name;
 
+    //时间
+    private String time;
+
     // 年龄
     private Integer age;
 

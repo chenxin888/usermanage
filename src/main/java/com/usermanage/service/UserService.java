@@ -42,4 +42,7 @@ public class UserService {
         return false;
     }
 
+    public void addTime(User user) {
+        this.userMapper.addTime(user);
+    }
 }

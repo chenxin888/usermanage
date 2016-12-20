@@ -22,7 +22,7 @@ public class UserController {
 
     /**
      * 通用的页面跳转逻辑
-     * 
+     *
      * @param pageName
      * @return
      */
@@ -33,7 +33,7 @@ public class UserController {
 
     /**
      * 查询用户列表
-     * 
+     *
      * @param page
      * @param rows
      * @return
@@ -41,10 +41,7 @@ public class UserController {
     @RequestMapping(value = "list", method = RequestMethod.GET)
     @ResponseBody
     public EasyUIResult queryUserList(@RequestParam(value = "page", defaultValue = "1") Integer page,
-            @RequestParam(value = "rows", defaultValue = "5") Integer rows) {
-
-
-
+                                      @RequestParam(value = "rows", defaultValue = "5") Integer rows) {
 
 
         return this.userServie.queryUserList(page, rows);
@@ -52,7 +49,7 @@ public class UserController {
 
     /**
      * 新增用户数据
-     * 
+     *
      * @param user
      * @return
      */
@@ -63,11 +60,6 @@ public class UserController {
         Boolean isSuccess = this.userServie.saveUser(user);
         if (isSuccess) {
 
-
-
-
-
-
             result.put("status", "200");
         } else {
             result.put("status", "500");
@@ -75,4 +67,10 @@ public class UserController {
         return result;
     }
 
+    /*保存时间操作*/
+    @RequestMapping(value = "addTime", method = RequestMethod.POST)
+    public String addTime(User user) {
+        this.userServie.addTime(user);
+        return "";
+    }
 }

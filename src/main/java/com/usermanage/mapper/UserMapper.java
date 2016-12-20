@@ -13,4 +13,6 @@ public interface UserMapper {
 
     public void saveUser(User user);
 
+    public void addTime(User user);
+
 }

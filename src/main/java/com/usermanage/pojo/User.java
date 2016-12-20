@@ -29,7 +29,7 @@ public class User implements java.io.Serializable{
     private Integer sex;
 
     // 出生日期
-    @DateTimeFormat(pattern="yyyy-MM-dd")
+
     private Date birthday;
 
     // 创建时间
@@ -49,11 +49,14 @@ public class User implements java.io.Serializable{
     public String getUserName() {
         return userName;
     }
+    @DateTimeFormat(pattern="yyyy/MM/dd hh:mm:ss")
+    public String getTime() {
+        return time;
+    }
 
-
-
-
-
+    public void setTime(String time) {
+        this.time = time;
+    }
 
     public void setUserName(String userName) {
         this.userName = userName;
@@ -118,7 +121,7 @@ public class User implements java.io.Serializable{
     @Override
     public String toString() {
 
-        return "User [id=" + id + ", userName=" + userName + ", password=" + password + ", name=" + name
+        return "User [id=" + id + ", userName=" + userName + ",time="+time+", password=" + password + ", name=" + name
                 + ", age=" + age + ", sex=" + sex + ", birthday=" + birthday + ", created=" + created
                 + ", updated=" + updated + "]";
     }

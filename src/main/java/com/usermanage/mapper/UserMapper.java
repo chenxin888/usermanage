@@ -15,4 +15,6 @@ public interface UserMapper {
 
     public void addTime(User user);
 
+    public List<User> queryUser();
+
 }

@@ -5,9 +5,12 @@ import com.usermanage.pojo.User;
 import com.usermanage.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RequestMapping("user")
@@ -71,6 +74,15 @@ public class UserController {
     @RequestMapping(value = "addTime", method = RequestMethod.POST)
     public String addTime(User user) {
         this.userServie.addTime(user);
-        return "";
+        return "success";
     }
+
+   /* 查询操作*/
+   @RequestMapping(value = "findUser", method = RequestMethod.POST)
+   public String findUser(Model model){
+       List<User> userList = new ArrayList<User>();
+       userList = this.userServie.fingUser();
+       model.addAttribute("userList",userList);
+       return "listUser";
+   }
 }

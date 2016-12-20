@@ -41,8 +41,8 @@
 	</insert>
     <insert id="addTime" parameterType="User">
 		INSERT INTO user (id,user_name,name1,time1)
-VALUES
-	(NULL, #{userName}, #{name}, #{time})
+        VALUES
+	    (NULL, #{userName}, #{name}, #{time})
 	</insert>
 
 </mapper>

@@ -45,4 +45,8 @@ public class UserService {
     public void addTime(User user) {
         this.userMapper.addTime(user);
     }
+
+    public List<User> fingUser(){
+        return userMapper.queryUser();
+    }
 }
